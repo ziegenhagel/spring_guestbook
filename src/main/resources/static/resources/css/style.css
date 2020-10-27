@@ -22,3 +22,12 @@ blockquote {
 form#form {
 	padding: 0 1.25em;
 }
+html {
+    /*
+    filter:invert(1);
+    */
+}
+
+body {
+    margin:30px auto;
+}
