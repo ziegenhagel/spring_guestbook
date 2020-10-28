@@ -11,7 +11,13 @@
 	<body>
         <div class="container">
             <h1 class="text-center" th:text="#{guests.title}"></h1>
-            <p th:text="#{guests.no_guests}"></p>
+            <p th:if="etries == null" th:text="#{guests.no_guests}"></p>
+            <hr/>
+			<div th:each="entry, it : ${entries}" th:with="index = ${it.count}">
+                <h4 th:text="${index} + '. ' + ${entry.name}" class="card-title">1. Posting</h4>
+            </div>
+            <hr/>
+            <a href="/guestbook" th:text="#{guestbook.to_link}"></a>
         </div>
     </body>
 </html>

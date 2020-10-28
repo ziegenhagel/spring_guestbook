@@ -19,6 +19,8 @@
 		</div>
 		
 		<div class="text-center">
+            <a href="/guests" th:text="#{guests.to_link}"></a>
+            &emsp;
 			<a sec:authorize="isAnonymous()" href="/login">Login</a>
 			<a sec:authorize="isAuthenticated()" href="/logout">Logout</a>
 		</div>
