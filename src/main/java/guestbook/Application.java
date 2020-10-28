@@ -85,6 +85,7 @@ public class Application {
 
 			// Route requests to /login to the login view (a default one provided by Spring Security)
 			registry.addViewController("/login").setViewName("login");
+			registry.addViewController("/guests").setViewName("guests");
 		}
 
 		/*
